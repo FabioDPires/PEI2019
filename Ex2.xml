@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pizzas>
+    <Pizza>
+        <name codigo="VEP">Veggie-Pizza</name>
+        <base>Tiny</base>
+        <toppings>
+        <topping>spinach</topping>
+        <topping>cheese</topping>
+        <topping>tomato sauce</topping>
+        </toppings>
+        <Precos>
+            <preco tamanho="pequeno">6.00€</preco>
+            <preco tamanho="medio">8.00€</preco>
+            <preco tamanho="grande">12.00€</preco>
+        </Precos>
+        
+    </Pizza>
+    <Pizza>
+        <name codigo="MZP">Mozzarella-Pizza</name>
+        <base>Crispy</base>
+        <toppings>
+        <topping>cheese</topping>
+        <topping>oregano</topping>
+        <topping>onion sauce</topping>
+        </toppings>
+        <Precos>
+            <preco tamanho="pequeno">7.00€</preco>
+            <preco tamanho="medio">8.50€</preco>
+            <preco tamanho="grande">13.00€</preco>
+        </Precos>
+        
+    </Pizza>
+    <Pizza>
+        <name codigo="VEP">Veggie-Pizza</name>
+        <base>Lean</base>
+        <toppings>
+        <topping>chicken</topping>
+        <topping>oregano</topping>
+        <topping>tomato sauce</topping>
+        </toppings>
+        <Precos>
+            <preco tamanho="pequeno">6.00€</preco>
+            <preco tamanho="medio">9.00€</preco>
+            <preco tamanho="grande">12.50€</preco>
+        </Precos>
+        
+    </Pizza>
+    <Pizza>
+        <name codigo="VEP">Veggie-Pizza</name>
+        <base>Tiny</base>
+        <toppings>
+        <topping>spinach</topping>
+        <topping>cheese</topping>
+        <topping>tomato sauce</topping>
+            <topping>chicken </topping>
+        </toppings>
+        <Precos>
+            <preco tamanho="pequeno">6.00€</preco>
+            <preco tamanho="medio">8.50€</preco>
+            <preco tamanho="grande">15.00€</preco>
+        </Precos>
+        
+    </Pizza>
+</Pizzas>
