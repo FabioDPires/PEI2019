@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="unqualified"
+    xmlns="https://www.fatura.com/CommonTypes"
+    targetNamespace="https://www.fatura.com/CommonTypes"
+    
+    >
+    
+    <xs:simpleType name="formatRuaLimitado">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="100"></xs:maxLength>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="formatCidadeLimitado">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="50"></xs:maxLength>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="formatPagamentoLimitado">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Transferencia"/>
+            <xs:enumeration value="Monetario"/>
+            <xs:enumeration value="Cartao"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="formatPrecoLimitado">
+        <xs:restriction base="xs:decimal">
+            <xs:fractionDigits value="2"></xs:fractionDigits>
+            <xs:totalDigits value="5"></xs:totalDigits>
+        </xs:restriction>
+    </xs:simpleType>
+    
+</xs:schema>

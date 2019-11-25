@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<m:Faturas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:m="https://www.fatura.com/Main"
+    xsi:schemaLocation="https://www.fatura.com/Main Main.xsd ">
+    <Fatura num="100254">
+    <moradaFaturacao>
+        <Rua>Rua Dr. Roberto Frias</Rua>
+        <Numero>712 </Numero>
+        <CodigoPostal>4200-465</CodigoPostal>
+        <Cidade>Porto</Cidade>
+        <Pais>Portugal</Pais>
+    </moradaFaturacao>
+
+    <moradaEnvio>
+        <Entidade>ESCOLA SUPERIOR DE TECNOLOGIA E GESTÃO </Entidade>
+        <Rua>Rua do Curral, Casa do Curral</Rua>
+        <CodigoPostal>4610-156</CodigoPostal>
+        <Cidade>Felgueiras</Cidade>
+        <Pais>Portugal</Pais>
+
+    </moradaEnvio>
+    <Data>2019/05/05</Data>
+    <TipoPagamento>Transferencia</TipoPagamento>
+
+    <Produtos>
+        <Produto>
+            <Nome>Router Asus</Nome>
+            <Quantidade>50</Quantidade>
+            <PrecoUnitario>53.99 </PrecoUnitario>
+        </Produto>
+        <Produto>
+            <Nome>Desktop DELL REF:4323E</Nome>
+            <Quantidade>20</Quantidade>
+            <PrecoUnitario>890.88 </PrecoUnitario>
+        </Produto>
+    </Produtos>
+</Fatura>
+</m:Faturas>

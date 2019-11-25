@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified"
+    xmlns="http://www.menu.com/PizzaType" targetNamespace="http://www.menu.com/PizzaType"
+    xmlns:c="https://www.menu.com/CommonTypesPizza" xmlns:i="http://www.menu.com/IngredientsTypes"
+    xmlns:p="http://www.menu.com/PrecosTypes">
+    <xs:import namespace="https://www.menu.com/CommonTypesPizza"
+        schemaLocation="CommonTypesPizza.xsd"/>
+    <xs:import namespace="http://www.menu.com/IngredientsTypes"
+        schemaLocation="IngredientesType.xsd"/>
+    <xs:import namespace="http://www.menu.com/PrecosTypes" schemaLocation="PrecosTypes.xsd"/>
+
+
+    <xs:complexType name="formatoPizza">
+        <xs:sequence>
+            <xs:element name="Name" type="c:formatoNameLimitado"/>
+            <xs:element name="base" type="c:formatoNameLimitado"/>
+            <xs:element name="toppings">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="topping" type="i:formatoIngredientes" minOccurs="1" maxOccurs="unbounded"></xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+                
+                
+            </xs:element>
+            <xs:element name="precos">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="preco" type="p:formatoPreco" minOccurs="1" maxOccurs="3"/>
+
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="codigo" type="c:formatoCodigoLimitad"/>
+    </xs:complexType>
+</xs:schema>

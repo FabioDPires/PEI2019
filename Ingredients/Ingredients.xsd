@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     elementFormDefault="unqualified"
+     xmlns="http://www.ingredients.com/IngredientsTypes"
+     targetNamespace="http://www.ingredients.com/IngredientsTypes"
+     xmlns:c="https://www.ingredients.com/CommonTypesIngredients"
+    >
+    
+    <xs:import namespace="https://www.ingredients.com/CommonTypesIngredients" schemaLocation="CommonTypesIngredients.xsd"></xs:import>
+    
+    
+    <xs:complexType name="formatoIngredients">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"></xs:element>
+            <xs:element name="categoria" type="c:formatoCategoriaLimitado"></xs:element>
+            <xs:element name="calorias" type="formatoCalorias"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+        
+        
+        
+    <xs:complexType name="formatoCalorias">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="unity" type="c:formatoCaloriasLimitado"></xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:schema>

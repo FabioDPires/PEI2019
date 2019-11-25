@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<m:Menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:m="http://www.menu.com/Menu"
+    xsi:schemaLocation="http://www.menu.com/Menu Menu.xsd">
+    
+    <Pizza codigo="VGP">
+        <Name >Veggie Pizza</Name>
+        <base>tiny</base>
+        <toppings>
+            <topping colocacao="topping">spinach</topping>
+            <topping colocacao="base">cheese</topping>
+            <topping colocacao="base">tomato sauce</topping>
+        </toppings>
+        <precos>
+            <preco tamanho="pequeno" >6.00</preco>
+            <preco tamanho="medio">8.00</preco>
+            <preco tamanho="grande">10.00</preco>
+        </precos>
+    </Pizza>
+    <Pizza codigo="MZP">
+        <Name >Mozarella Pizza</Name>
+        <base>crispy</base>
+        <toppings>
+            <topping colocacao="base">cheese</topping>
+            <topping colocacao="topping">oregano</topping>
+            <topping colocacao="base">onion sauce</topping>
+        </toppings>
+        <precos>
+            <preco tamanho="pequeno" >7.00</preco>
+            <preco tamanho="medio">8.50</preco>
+            <preco tamanho="grande">13</preco>
+        </precos>
+    </Pizza>
+    <Pizza codigo="MTP">
+        <Name >Meat Pizza</Name>
+        <base>lean</base>
+        <toppings>
+            <topping colocacao="topping">chicken</topping>
+            <topping colocacao="topping">oregano</topping>
+            <topping colocacao="base">tomato sauce</topping>
+        </toppings>
+        <precos>
+            <preco tamanho="pequeno">6.00</preco>
+            <preco tamanho="medio">9.00</preco>
+            <preco tamanho="grande">12.50</preco>
+        </precos>
+    </Pizza>
+    <Pizza codigo="EST">
+        <Name >ESTG PIZZA</Name>
+        <base>tiny</base>
+        <toppings>
+            <topping colocacao="topping">spinach</topping>
+            <topping colocacao="base">cheese</topping>
+            <topping colocacao="base">tomato sauce</topping>
+            <topping colocacao="topping">chicken</topping>
+        </toppings>
+        <precos>
+            <preco tamanho="pequeno" >6.00</preco>
+            <preco tamanho="medio">8.50</preco>
+            <preco tamanho="grande">15.00</preco>
+        </precos>
+    </Pizza>
+
+</m:Menu>

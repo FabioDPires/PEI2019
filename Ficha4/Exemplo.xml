@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <pizza>
+        <name>Estranha</name>
+        <ingredients>
+            <ingredient>
+                <name>Alface</name>
+                <category>Vegetal</category>
+                <unit>gramas</unit>
+                <calories>23</calories>
+            </ingredient>
+            <ingredient>
+                <name>Repolho</name>
+                <category>Vegetal</category>
+                <unit>gramas</unit>
+                <calories>12</calories>
+            </ingredient>
+            <ingredient>
+                <name>Leite</name>
+                <category>Latícinio</category>
+                <unit>gramas</unit>
+                <calories>42</calories>
+            </ingredient>
+        </ingredients>
+        <price>
+            <small>3</small>
+            <medium>6</medium>
+            <big>9</big>
+        </price>
+    </pizza>
+</menu>

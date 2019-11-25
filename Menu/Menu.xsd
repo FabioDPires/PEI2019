@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="unqualified"
+    xmlns="http://www.menu.com/Menu"
+    targetNamespace="http://www.menu.com/Menu"
+    
+    xmlns:p="http://www.menu.com/PizzaType">
+    
+    
+    <xs:import namespace="http://www.menu.com/PizzaType" schemaLocation="PizzaType.xsd"></xs:import>
+    
+    <xs:element name="Menu">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Pizza" type="p:formatoPizza" minOccurs="2" maxOccurs="20"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>

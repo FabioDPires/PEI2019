@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="unqualified"
+    xmlns="http://www.fatura.com/CustomerTypes"
+    targetNamespace="http://www.fatura.com/CustomerTypes"
+    xmlns:c="https://www.fatura.com/CommonTypes"
+    >
+    <xs:import namespace="https://www.fatura.com/CommonTypes" schemaLocation="CommonTypes.xsd"></xs:import>
+    
+    <xs:complexType name="formatoMorada">
+        <xs:sequence>
+            <xs:element name="Entidade" type="c:formatRuaLimitado" minOccurs="0" maxOccurs="1"></xs:element>
+            <xs:element name="Rua" type="c:formatRuaLimitado"></xs:element>
+            <xs:element name="Numero" type="xs:int" minOccurs="0" maxOccurs="1"></xs:element>
+            <xs:element name="CodigoPostal" type="xs:string"></xs:element>
+            <xs:element name="Cidade" type="c:formatCidadeLimitado"></xs:element>
+            <xs:element name="Pais" type="c:formatCidadeLimitado"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

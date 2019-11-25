@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified"
+    xmlns="https://www.menu.com/CommonTypesPizza"
+    targetNamespace="https://www.menu.com/CommonTypesPizza">
+
+
+
+
+    <xs:simpleType name="formatoCodigoLimitad">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z][A-Z][A-Z]"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="formatoTamanhoLimitado">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="pequeno"></xs:enumeration>
+            <xs:enumeration value="medio"></xs:enumeration>
+            <xs:enumeration value="grande"></xs:enumeration>
+            
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="formatoNameLimitado">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="50"></xs:maxLength>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="formatoPrecoLimitado">
+        <xs:restriction base="xs:decimal">
+            <xs:fractionDigits value="2"></xs:fractionDigits>
+            <xs:totalDigits value="4"></xs:totalDigits>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="formatoColocacaoLimitado">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="topping"></xs:enumeration>
+            <xs:enumeration value="base"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

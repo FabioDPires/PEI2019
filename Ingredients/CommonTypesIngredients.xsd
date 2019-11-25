@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified"
+    xmlns="https://www.ingredients.com/CommonTypesIngredients"
+    targetNamespace="https://www.ingredients.com/CommonTypesIngredients"> 
+    
+    <xs:simpleType name="formatoCategoriaLimitado">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Vegetal"></xs:enumeration>
+            <xs:enumeration value="Dairy"></xs:enumeration>
+            <xs:enumeration value="Sauce"></xs:enumeration>
+            <xs:enumeration value="Herb"></xs:enumeration>
+            <xs:enumeration value="Meat"></xs:enumeration>
+            <xs:enumeration value="Pasta"></xs:enumeration>
+            
+            
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="formatoCaloriasLimitado">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="grams"></xs:enumeration>
+            <xs:enumeration value="milimiters"></xs:enumeration>
+            <xs:enumeration value="unit"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+
+
+
+
+</xs:schema>

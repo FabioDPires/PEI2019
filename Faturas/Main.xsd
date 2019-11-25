@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified"
+    xmlns="https://www.fatura.com/Main" 
+    targetNamespace="https://www.fatura.com/Main"
+    xmlns:c="https://www.fatura.com/CommonTypes" 
+    xmlns:cus="http://www.fatura.com/CustomerTypes"
+    xmlns:p="https://www.fatura.com/ProductTypes">
+
+    <xs:import namespace="https://www.fatura.com/CommonTypes" schemaLocation="CommonTypes.xsd"/>
+    <xs:import namespace="http://www.fatura.com/CustomerTypes" schemaLocation="CustomerTypes.xsd"/>
+    <xs:import namespace="https://www.fatura.com/ProductTypes" schemaLocation="ProductTypes.xsd"/>
+
+    <xs:element name="Faturas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Fatura" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="moradaFaturacao" type="cus:formatoMorada"/>
+                            <xs:element name="moradaEnvio" type="cus:formatoMorada"/>
+                            <xs:element name="Data" type="xs:string"/>
+                            <xs:element name="TipoPagamento" type="c:formatPagamentoLimitado"/>
+                            <xs:element name="Produtos" type="p:formatoProdutos"> </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="num" type="xs:int"></xs:attribute>
+                    </xs:complexType>
+
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+
+
+
+
+    </xs:element>
+
+
+</xs:schema>

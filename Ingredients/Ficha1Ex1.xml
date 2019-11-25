@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<m:ingredients xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:m="http://www.ingredients.com/MainIngredients"
+    xsi:schemaLocation="http://www.ingredients.com/MainIngredients MainIngredients.xsd" >
+    <ingredient>
+        <name>Tomato</name>
+        <categoria>Vegetal</categoria>
+        <calorias unity="grams">18</calorias>
+    </ingredient>
+    <ingredient>
+        <name>Spinach</name>
+        <categoria>Vegetal</categoria>
+        <calorias unity="grams">18</calorias>
+    </ingredient>
+    <ingredient>
+        <name>Cheese </name>
+        <categoria>Dairy</categoria>
+        <calorias unity="grams">25</calorias>
+    </ingredient>
+    <ingredient>
+        <name>Tomato Sauce </name>
+        <categoria>Sauce</categoria>
+        <calorias unity="milimiters">40</calorias>
+    </ingredient>
+    <ingredient>
+        <name>Oregano</name>
+        <categoria>Herb</categoria>
+        <calorias unity="grams">45</calorias>
+    </ingredient>
+    <ingredient>
+        <name>Chicken </name>
+        <categoria>Meat</categoria>
+        <calorias unity="milimiters">32</calorias>
+    </ingredient>
+    <ingredient>
+        <name>Onion Sauce</name>
+        <categoria>Sauce</categoria>
+        <calorias unity="milimiters">55</calorias>
+    </ingredient>
+    <ingredient>
+        <name>Pasta</name>
+        <categoria>Pasta</categoria>
+        <calorias unity="grams">43</calorias>
+    </ingredient>
+</m:ingredients>

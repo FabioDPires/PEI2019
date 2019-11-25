@@ -1,0 +1,44 @@
+EXERCICIO 1
+
+1)	/bookstore/book/title[@lang="en-us"]
+
+2)	count(/bookstore/book/title[@lang="en-us"])
+
+3)	/bookstore/book/author[contains(text(),"Laurentiis")]/text()
+
+4)	/bookstore/book/author[contains(text(),"Laurentiis")]
+
+5)	bookstore/book[price>30]/title/text()
+
+6)	/bookstore/book[price>30 and year>2003]/title/text()
+
+7)	/bookstore/book[last()]
+
+8)	/bookstore/book[1]
+
+9)	/bookstore/book[last()-1]
+
+10)	count(//*)
+
+11)	count(//@*)
+
+12)	/bookstore/book[@category]
+
+13)	/bookstore/book[1]/child::*[2]
+
+14)	/bookstore/book/title[contains(text(),"ay") or contains(text(),"ry")]/text()
+
+15)	/bookstore/book[title[contains(text(),"n")]][price>30]
+
+
+EXERCICIO 2
+
+1)	sum(//ingredient[category[not(contains(text(),"Vegetal"))]]//calories/text())
+
+2)	//ingredient[calories>20]/name/text()
+
+3)	/menu/pizza[count(ingredients/ingredient)=2]/name/text()
+
+4)	/menu/pizza[name="Estranha"]/count(ingredients/ingredient)
+
+5)	/menu/pizza[ingredients/ingredient/name[contains(text(),"Leite")]]/name/text()

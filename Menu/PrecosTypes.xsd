@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="unqualified"
+    xmlns="http://www.menu.com/PrecosTypes"
+    targetNamespace="http://www.menu.com/PrecosTypes"
+    xmlns:c="https://www.menu.com/CommonTypesPizza">
+    
+    
+    
+   <xs:import namespace="https://www.menu.com/CommonTypesPizza"  schemaLocation="CommonTypesPizza.xsd"></xs:import>
+    
+    <xs:complexType name="formatoPreco">
+        <xs:simpleContent>
+            <xs:extension base="c:formatoPrecoLimitado">
+                <xs:attribute name="tamanho" type="c:formatoTamanhoLimitado"></xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+        
+                
+                
+</xs:schema>
