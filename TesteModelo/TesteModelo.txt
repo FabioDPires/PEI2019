@@ -1,0 +1,33 @@
+EXERCICIO 1.1
+
+<xs:ComplexType name="pizzaPriceType">
+
+	<xs:sequence>
+		
+		<xs:element name="small" type="xs:float"/>
+		<xs:element name="medium" type="xs:float"/>
+		<xs:element name="big" type="xs:float"/>
+	
+	</xs:sequence>
+
+</xs:ComplexType>
+
+
+EXERCICIO 1.2
+
+No documento XSD PizzaType ,criar um elemento Pizza
+
+<xs:element name="pizza" type="pizzaType"/>
+
+EXERCICIO 1.3
+
+No primeiro excerto é um tipo global enquanto que no segundo é um tipo local. IngredientsType passa a ser um elemento logo ao ser utilizado PizzaType deverá ser utilizado "ref"
+
+<xs:element ref="p.pizza"/>
+
+
+EXERCICIO 2.1
+
+/restaurant/name/text()
+
+/restaurant[@id="40357217]

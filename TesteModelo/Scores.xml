@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<restaurants>
+<restaurant id="40357217">
+    <name>Wild Asia</name>
+    <cuisine>American</cuisine>
+    <address>
+        <zipcode>10460</zipcode>
+        <borough>Bronx</borough>
+        <street>Southern Boulevard</street>
+    </address>
+    <grades>
+        <grade>
+            <score>11</score>
+            <value>A</value>
+        </grade>
+        (...)
+    </grades>
+</restaurant>
+
+
+<restaurant id="40357219">
+    <name>Wild Asia</name>
+    <cuisine>American</cuisine>
+    <address>
+        <zipcode>10460</zipcode>
+        <borough>Bronx</borough>
+        <street>Southern Boulevard</street>
+    </address>
+    <grades>
+        <grade>
+            <score>9</score>
+            <value>F</value>
+        </grade>
+        (...)
+    </grades>
+</restaurant>
+</restaurants>
